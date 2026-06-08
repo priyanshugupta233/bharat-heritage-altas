@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color: white;
+  min-height: 100vh;
+}
+
+/* TOP BAR */
+.topbar {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(20px);
+}
+
+.topbar h1 {
+  color: gold;
+}
+
+/* NAV */
+.nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 15px;
+}
+
+.nav button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 10px;
+  background: #22c55e;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* HERO */
+.hero-card {
+  width: 90%;
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(20px);
+  text-align: center;
+}
+
+/* MAP GRID (ANIMATED INDIA STYLE) */
+.map-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.map-tile {
+  padding: 25px;
+  border-radius: 15px;
+  cursor: pointer;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: 0.3s;
+  animation: float 3s infinite ease-in-out;
+}
+
+.map-tile:hover {
+  transform: scale(1.05);
+  background: rgba(250,204,21,0.2);
+  box-shadow: 0 0 20px rgba(250,204,21,0.4);
+}
+
+@keyframes float {
+  0% {transform: translateY(0px);}
+  50% {transform: translateY(-5px);}
+  100% {transform: translateY(0px);}
+}
+
+/* CARD */
+.card {
+  width: 90%;
+  max-width: 420px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.07);
+  backdrop-filter: blur(20px);
+  text-align: center;
+}
+
+/* BUTTON */
+.btn {
+  padding: 12px;
+  width: 90%;
+  margin: 10px auto;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background: rgba(255,255,255,0.15);
+  color: white;
+}
